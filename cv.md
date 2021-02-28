@@ -32,3 +32,11 @@ function dateSample(sampleActivity) {
   return false;
 };
 ```
+
+## Expirience
+
+## Education
+Mozyr State Polytechnic College
+
+## English level
+A2
