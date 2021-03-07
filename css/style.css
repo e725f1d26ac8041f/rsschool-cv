@@ -1,0 +1,141 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Roboto", sans-serif;
+  color: #555;
+}
+
+.container {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 960px;
+}
+
+.header {
+  margin-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 25px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto Mono", monospace;
+  color: #fff;
+  background-color: #4648aa;
+}
+
+.header__nav {
+  margin-bottom: 60px;
+}
+.header__nav-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-list__link {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  opacity: .5;
+  text-transform: uppercase;
+  transition: all .15s;
+}
+.nav-list__link:hover {
+  opacity: 1;
+}
+
+.header__content {
+  display: flex;
+}
+.header__left {
+  position: relative;
+  margin-right: 65px;
+}
+.header__avatar {
+  position: relative;
+  width: 315px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.header__name {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 44px;
+  line-height: 50px;
+  font-weight: 700;
+}
+.header__work {
+  margin-bottom: 40px;
+}
+.header__contacts dt {
+  float: left;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: .4;
+}
+.header__contacts dd {
+  margin-bottom: 15px;
+  padding-left: 100px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+section h2 {
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #4648aa;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #4648aa;
+}
+
+pre {
+  margin: 0;
+  padding-left: 30px;
+  background-color: #f6f8fa;
+}
+code {
+  font-size: 13px;
+  line-height: 20px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.footer {
+  background-color: #4648aa;
+}
+.footer__inner {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer__rss-logo {
+  height: 32px;
+}
+.footer__year {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
