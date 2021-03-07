@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e725f1d26ac8041f - HTML, CSS & Git Basics</title>
+  <!-- Roboto -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Roboto Mono -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li>
+            <a class="nav-list__link" href="#summary">Summary</a>
+          </li>
+          <li>
+            <a class="nav-list__link" href="#skills">Skills</a>
+          </li>
+          <li>
+            <a class="nav-list__link" href="#code-example">Code example</a>
+          </li>
+          <li>
+            <a class="nav-list__link" href="#education">Education</a>
+          </li>
+          <li>
+            <a class="nav-list__link" href="#english-level">English level</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__content">
+        <div class="header__left">
+          <img class ="header__avatar" src="images/rssschool-cv-photo.jpg" alt="avatar">
+        </div>
+        <div class="header__right">
+          <h1 class="header__name">
+            Anton Zakhar
+          </h1>
+          <div class="header__work">
+            frontend developer
+          </div>
+          <dl class="header__contacts">
+            <dt>Phone:</dt>
+            <dd>
+              <a href="tel:+375298347725">+375 (29) 834-77-25</a>
+            </dd>
+            <dt>Email:</dt>
+            <dd>
+              <a href="mailto:e725f1d26ac8041f@gmail.com">e725f1d26ac8041f@gmail.com</a>
+            </dd>
+            <dt>Telegram:</dt>
+            <dd>
+              <a href="https://t.me/e725f1d26ac8041f">@e725f1d26ac8041f</a>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <section id="summary">
+        <h2>Summary</h2>
+        <p>
+          I have a passion for programming which I have demonstrated through months of self-study. I also have a teachable attitude and a desire to learn (as evidenced by my continued self-study)
+        </p>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills__list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+        </ul>
+      </section>
+      <section id="code-example">
+        <h2>Code example</h2>
+        <pre><code>
+const MODERN_ACTIVITY = 15; 
+const HALF_LIFE_PERIOD = 5730;
+const RADIOACTIVE_DECAY_CONSTANT = Math.log(2) / HALF_LIFE_PERIOD;
+            
+function dateSample(sampleActivity) {
+  if (
+    typeof sampleActivity === 'string' &&
+    isFinite(sampleActivity) &&
+    sampleActivity > 0 &&
+    sampleActivity &lt;= MODERN_ACTIVITY
+  ) {
+      const sampleAge = Math.log(MODERN_ACTIVITY / sampleActivity) / RADIOACTIVE_DECAY_CONSTANT;
+      return Math.ceil(sampleAge);
+  }
+  
+  return false;
+};
+        </code></pre>
+      </section>
+      <section id="education">
+        <h2>Education</h2>
+        <p>Mozyr State Polytechnic College</p>
+      </section>
+      <section id="english-level">
+        <h2>English level</h2>
+        <p>A2</p>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <ul class="footer__list">
+          <li>
+            <a href="https://rs.school/js/" target="_blank">
+              <img class="footer__rss-logo" src="images/rsschool-logo.svg" alt="rsschool logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/e725f1d26ac8041f" target="_blank"> 
+              <img class="footer__github-logo" src="images/github-logo.png" alt="github logo">
+            </a>
+          </li>
+          <li>
+            <time class="footer__year" datetime="2021-03-07">&copy; 2021
+            </time>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
